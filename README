@@ -1,0 +1,19 @@
+Arcade machine controls to usb keyboard mapper
+----------------------------------------------
+
+* Keyboard HID firmware for UNO 16u8 from http://hunt.net.nz/users/darran/weblog/b3029/Arduino_UNO_Keyboard_HID_version_03.html
+
+Installation
+------------
+
+* Upload sketch to Arduino (while it has its original firmware)
+* Install dfu-programmer on linux/osx.
+* Put Arduino into DFU mode.
+* dfu-programmer at90usb82 erase
+* dfu-programmer at90usb82 flash (included firmware file)
+* dfu-programmer at90usb82 reset
+* Replug, and it should start sending button presses!
+
+
+
+
